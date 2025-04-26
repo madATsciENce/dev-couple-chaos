@@ -1,29 +1,14 @@
-# Ignore system files
-.DS_Store
-Thumbs.db
+# Ignore Node modules
+node_modules/
 
-# Ignore Python cache files
+# Ignore compiled Go binaries
+*.exe
+*.out
+*.bin
+
+# Ignore Python bytecode
 __pycache__/
 *.pyc
 
-# Ignore log files
-*.log
-
-# Ignore shell history files
-*.sh_history
-
-# Node modules (if you accidentally add a JS file someday)
-node_modules/
-
-# Ignore personal environment files
-.env
-
-# Ignore backup files
-*.bak
-*.tmp
-
-# Ignore MacOS / Windows system garbage
-*.swp
-*.swo
-ehthumbs.db
-Icon?
+# Ignore secret love letters
+hidden/

@@ -1,0 +1,15 @@
+# feelings/trust_building.ai
+
+import random
+
+class TrustBot:
+    def __init__(self):
+        self.repair_rate = 10
+
+    def repair(self, relationship_status):
+        print("🤖 TrustBot Activated: Attempting emotional repair...")
+        repair_amount = random.randint(5, self.repair_rate)
+        relationship_status['trust_score'] = min(relationship_status['trust_score'] + repair_amount, 100)
+        relationship_status['happiness'] = min(relationship_status['happiness'] + repair_amount, 100)
+        print(f"💖 Repaired Trust by {repair_amount} points.")
+        return relationship_status

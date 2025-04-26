@@ -1,19 +1,13 @@
-import time
+# feelings/hugs.py
+
 import random
 
-class HugDistributor:
-    def __init__(self, recipient):
-        self.recipient = recipient
-        self.hug_types = ["Bear Hug 🐻", "Side Hug 🤗", "Virtual Hug 💻", "Back Hug 😳"]
+class HugService:
+    def __init__(self):
+        self.hug_count = 0
 
-    def deliver_hug(self):
-        hug = random.choice(self.hug_types)
-        print(f"Delivering {hug} to {self.recipient}... 🤍")
-        time.sleep(1)
-        print("Hug successfully delivered! ✨")
-
-if __name__ == "__main__":
-    bae = HugDistributor("My Love")
-    while True:
-        bae.deliver_hug()
-        time.sleep(random.randint(3,5))  # infinite loop of hugs
+    def send_hug(self):
+        hugs = ["Bear Hug 🤗", "Quick Hug 🫂", "Tight Hug 🧸", "Back Hug 🥰"]
+        chosen_hug = random.choice(hugs)
+        print(f"[HUG SERVICE]: Sending {chosen_hug}")
+        self.hug_count += 1

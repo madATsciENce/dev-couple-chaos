@@ -1,9 +1,25 @@
-# Critical Bug Report
+# 🚨 Bug Report Form
 
-- Issue: Forgot anniversary
-- Severity: P1 (BLOCKER)
-- Fix:
-  - Apologize immediately
-  - Send chocolates
-  - Plan surprise date
-  - Pray for forgiveness 🙏
+**Title:** [Short summary]
+
+**Steps to Reproduce:**
+
+1. Be annoying.
+2. Forget to say goodnight.
+3. Don't notice the haircut.
+
+**Expected Behavior:**
+Receive endless love anyway.
+
+**Actual Behavior:**
+Cold shoulder detected.
+
+**Screenshots:**
+(Tears emoji here)
+
+**Severity:**
+
+- [x] Critical
+- [ ] High
+- [ ] Medium
+- [ ] Low

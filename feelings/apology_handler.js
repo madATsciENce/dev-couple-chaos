@@ -1,24 +1,19 @@
-class ApologyHandler {
-    constructor() {
-      this.errors = [
-        "Didn’t notice haircut 💇‍♀️",
-        "Forgot good morning text ☀️",
-        "Watched Netflix series without you 📺",
-      ];
+// feelings/apology_handler.js
+
+const fs = require('fs');
+
+// Simulating apology success based on silent treatment config
+function attemptApology() {
+    let success = Math.random() > 0.4; // 60% chance
+    if (fs.existsSync('../bugs/silent_treatment.config')) {
+        console.log("😶 Silent Treatment Active. Apology difficulty increased!");
+        success = Math.random() > 0.8; // Only 20% chance
     }
-  
-    generateApology(error) {
-      console.log(`I'm really sorry for: ${error}`);
-      console.log("Please accept these flowers 🌸 + endless hugs 🤗.");
+    if (success) {
+        console.log("🙏 Apology Accepted!");
+    } else {
+        console.log("🚪 Apology Ignored. Slammed Door Noise.");
     }
-  
-    run() {
-      this.errors.forEach(error => {
-        this.generateApology(error);
-      });
-    }
-  }
-  
-  const apology = new ApologyHandler();
-  apology.run();
-  
+}
+
+module.exports = { attemptApology };
