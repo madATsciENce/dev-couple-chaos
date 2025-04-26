@@ -12,3 +12,6 @@ __pycache__/
 
 # Ignore secret love letters
 hidden/
+
+# Ignore auto-generated daily love notes
+daily_love_note.txt

@@ -1,0 +1,23 @@
+name: Daily Love Commit ❤️
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at 12 AM UTC
+  workflow_dispatch: # You can manually trigger it too!
+
+jobs:
+  send-love:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Add a Love Note
+        run: |
+          echo "I love you 💖 - $(date)" >> daily_love_note.txt
+          git config --global user.name 'DevLoveBot'
+          git config --global user.email 'devlovebot@example.com'
+          git add daily_love_note.txt
+          git commit -m "Daily: A little more love 💌"
+          git push
