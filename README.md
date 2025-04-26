@@ -24,3 +24,16 @@ Clone this chaotic love story into your heart ❤️:
 git clone https://github.com/yourusername/dev-couple-relationship.git
 
 ```
+
+```
+💬 Hint: true love is always hidden in the code... (try exploring `/hidden/`) 💖
+```
+
+```
+# ❤️ Love License Agreement
+
+By using this repository, you agree to:
+- Love unconditionally
+- Forgive minor merge conflicts
+- Always commit hugs before sleeping
+```
