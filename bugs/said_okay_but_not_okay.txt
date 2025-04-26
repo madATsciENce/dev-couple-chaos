@@ -1,0 +1,11 @@
+🚨 Issue Detected:
+
+Command: "It's okay."
+Status: 🚩 FLAGGED AS NOT OKAY.
+
+Recommended Action:
+- Offer immediate cuddles.
+- Start peace talks.
+- Reassure 100x times.
+
+Risk Level: EXTREME EMOTIONAL DAMAGE if ignored.
