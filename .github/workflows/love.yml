@@ -20,7 +20,10 @@ jobs:
           echo "I love you 💖 - $(date)" >> daily_love_note.txt
           git config --global user.name 'DevLoveBot'
           git config --global user.email 'devlovebot@example.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git add daily_love_note.txt
-          git commit -m "Daily: A little more love 💌"
-          git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily: A little more love 💌"
+            git push origin HEAD:main
+          fi
