@@ -14,10 +14,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Add a Love Note
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "I love you 💖 - $(date)" >> daily_love_note.txt
           git config --global user.name 'DevLoveBot'
           git config --global user.email 'devlovebot@example.com'
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git add daily_love_note.txt
           git commit -m "Daily: A little more love 💌"
-          git push
+          git push origin HEAD:main
